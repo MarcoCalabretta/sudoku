@@ -317,6 +317,7 @@ static void board_copy(struct board *dest, struct board *src) {
       (dest->data)[i][j] = 0;
     }
   }
+  heatmap_destroy(empty);
 
   // fill dest with src
   for (int i = 0; i < size; i++) {
